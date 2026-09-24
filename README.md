@@ -1,3 +1,7 @@
+# Semantic SEO Synthesizer — Programmatic Entity-Grounded SEO Generation Engine
+
+> A programmatic SEO engine synthesizing high-converting landing pages grounded in SERP entity graphs, keyword clusters, and structured schema markup.
+
 <p align="center">
   <h1 align="center">OpenSEO</h1>
   <p align="center">
