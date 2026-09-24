@@ -1,6 +1,6 @@
 ---
 name: database-schema
-description: Recommended database schema for an OpenSEO blog — posts, elements, categories, and optional dictionary tables. Use when setting up the database, creating migrations, or adapting the schema to a different ORM/database.
+description: Recommended database schema for an Semantic SEO Synthesizer blog — posts, elements, categories, and optional dictionary tables. Use when setting up the database, creating migrations, or adapting the schema to a different ORM/database.
 user-invocable: false
 ---
 

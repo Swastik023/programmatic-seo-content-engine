@@ -3,7 +3,7 @@
 > A programmatic SEO engine synthesizing high-converting landing pages grounded in SERP entity graphs, keyword clusters, and structured schema markup.
 
 <p align="center">
-  <h1 align="center">OpenSEO</h1>
+  <h1 align="center">Semantic SEO Synthesizer</h1>
   <p align="center">
     The open-source AI content engine for SEO.
     <br />
@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-blue" alt="License" /></a>
-  <a href="https://github.com/Juliusolsson05/openSEO"><img src="https://img.shields.io/github/stars/Juliusolsson05/openSEO?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/swastik-agnihotri/semantic-seo-synthesizer"><img src="https://img.shields.io/github/stars/swastik-agnihotri/semantic-seo-synthesizer?style=social" alt="GitHub stars" /></a>
 </p>
 
 <p align="center">
@@ -21,13 +21,13 @@
 </p>
 
 <!-- TODO: Add hero screenshot here once available -->
-<!-- <p align="center"><img src="public/screenshots/editor.png" alt="OpenSEO editor" width="800" /></p> -->
+<!-- <p align="center"><img src="public/screenshots/editor.png" alt="Semantic SEO Synthesizer editor" width="800" /></p> -->
 
 ---
 
 ## How it works
 
-**1. Tell it about your business.** OpenSEO scrapes your website and builds a structured company profile — industry, audience, tone, terminology, differentiators. Every piece of content it generates is aware of your business.
+**1. Tell it about your business.** Semantic SEO Synthesizer scrapes your website and builds a structured company profile — industry, audience, tone, terminology, differentiators. Every piece of content it generates is aware of your business.
 
 **2. Generate titles.** Specify your industry and how many titles you want. AI generates SEO-optimized titles with focus keywords following Yoast guidelines. Duplicates are filtered automatically.
 
@@ -115,7 +115,7 @@ Open `http://localhost:4720/setup`. Requires Node 22 and Docker.
 | Security | [SECURITY.md](SECURITY.md) |
 | API docs | `http://localhost:4720/api/docs` (when running) |
 
-## What OpenSEO is not
+## What Semantic SEO Synthesizer is not
 
 - Not a general-purpose CMS or website builder.
 - Not fully autonomous — AI assists, humans review and publish.

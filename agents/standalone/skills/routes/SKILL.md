@@ -50,7 +50,7 @@ Same as the blog listing, but filtered to posts with a specific category. Reuse 
 
 ## Optional: Webhook receiver — `/api/openseo`
 
-If the user wants to receive posts from OpenSEO Cloud later, add an API route that accepts the publishing webhook. This is optional for standalone mode but makes the migration path to cloud mode seamless.
+If the user wants to receive posts from Semantic SEO Synthesizer Cloud later, add an API route that accepts the publishing webhook. This is optional for standalone mode but makes the migration path to cloud mode seamless.
 
 **Implementation:**
 

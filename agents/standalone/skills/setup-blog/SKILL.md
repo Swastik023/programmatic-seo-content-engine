@@ -1,6 +1,6 @@
 ---
 name: setup-blog
-description: Set up a blog from scratch using OpenSEO's structured content system. Use when the user wants to build a blog, create a blog, or add a blog to their project. Guides through database schema, routes, element rendering engine, SEO metadata, and optional dictionary pages.
+description: Set up a blog from scratch using Semantic SEO Synthesizer's structured content system. Use when the user wants to build a blog, create a blog, or add a blog to their project. Guides through database schema, routes, element rendering engine, SEO metadata, and optional dictionary pages.
 ---
 
 # Setup Blog

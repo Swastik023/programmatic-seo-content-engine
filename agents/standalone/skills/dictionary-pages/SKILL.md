@@ -10,7 +10,7 @@ Optional but powerful. If the user's blog includes a glossary/dictionary, this c
 
 ## What this is
 
-OpenSEO's content system supports **dictionary hyperlinking** — when a blog post contains terms that match dictionary keywords, character-offset-based match data is stored on each element. The blog can use this data to turn keyword mentions into links to dictionary definition pages.
+Semantic SEO Synthesizer's content system supports **dictionary hyperlinking** — when a blog post contains terms that match dictionary keywords, character-offset-based match data is stored on each element. The blog can use this data to turn keyword mentions into links to dictionary definition pages.
 
 This creates an internal linking network that benefits both SEO (topical authority, crawl depth) and user experience (inline definitions).
 

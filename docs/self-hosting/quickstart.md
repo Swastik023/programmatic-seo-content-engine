@@ -1,6 +1,6 @@
 # Self-Hosting Quickstart
 
-Get OpenSEO running on your own machine in under 5 minutes.
+Get Semantic SEO Synthesizer running on your own machine in under 5 minutes.
 
 ## Prerequisites
 

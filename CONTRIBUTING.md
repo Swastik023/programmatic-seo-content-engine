@@ -1,4 +1,4 @@
-# Contributing to OpenSEO
+# Contributing to Semantic SEO Synthesizer
 
 ## Getting started
 

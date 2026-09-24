@@ -26,7 +26,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: OpenSEO version or commit
+      label: Semantic SEO Synthesizer version or commit
       description: Output of `git rev-parse --short HEAD` or the Docker image tag.
     validations:
       required: false

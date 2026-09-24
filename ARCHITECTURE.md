@@ -1,6 +1,6 @@
 # Architecture
 
-OpenSEO is a self-hosted AI content platform that generates SEO blog posts and glossary dictionaries for businesses. It runs as a Next.js app backed by Postgres, with optional S3 storage and multiple AI provider integrations. This document describes the current system shape honestly, including transitional areas.
+Semantic SEO Synthesizer is a self-hosted AI content platform that generates SEO blog posts and glossary dictionaries for businesses. It runs as a Next.js app backed by Postgres, with optional S3 storage and multiple AI provider integrations. This document describes the current system shape honestly, including transitional areas.
 
 ## Tech Stack
 
@@ -83,7 +83,7 @@ Image generation and sourcing uses Ideogram and Pexels APIs. All uploaded/genera
 
 **Outbound (push to external CMS):** `PublishingService` (`src/server/services/publishing.service.ts`) sends posts to the company's configured `api_endpoint` as JSON webhooks (event types: `post.publish`, `post.unpublish`). `PublishingSyncService` (`src/server/services/publishing-sync.service.ts`) handles bulk sync (`post.upsert`, `dictionary.upsert`) with per-item delivery tracking via `BlogPublish` rows. Bulk operations use the in-memory task runtime for progress tracking.
 
-**Inbound (external CMS pushes to OpenSEO):** Routes under `/api/v1/publishing/inbound/*` and `/api/publishing/inbound/` accept content via API-key auth (`PublishingApiKey`). Inbound content is written to the projection tables (`ExamplePost`, `ExampleElement`, `ExampleDictionary`, `ExampleWord`) via `src/server/public-content/store.ts`.
+**Inbound (external CMS pushes to Semantic SEO Synthesizer):** Routes under `/api/v1/publishing/inbound/*` and `/api/publishing/inbound/` accept content via API-key auth (`PublishingApiKey`). Inbound content is written to the projection tables (`ExamplePost`, `ExampleElement`, `ExampleDictionary`, `ExampleWord`) via `src/server/public-content/store.ts`.
 
 **Public content rendering:** The `ExamplePost`/`ExampleDictionary` tables (mapped to `example_posts`/`example_dictionaries` in Postgres) hold projected content that the `/site/*` and `/example/*` routes read directly. This is a separate copy from the canonical `BlogPost`/`Dictionary` tables -- the projection is not automatic; it flows through the sync/inbound APIs.
 

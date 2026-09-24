@@ -1,25 +1,25 @@
-# OpenSEO Agents
+# Semantic SEO Synthesizer Agents
 
-Agentic tooling for using OpenSEO with AI coding assistants like Claude Code.
+Agentic tooling for using Semantic SEO Synthesizer with AI coding assistants like Claude Code.
 
 ## What this is
 
-OpenSEO's AI generation is good at structured SEO tasks — keyword research, dictionary generation, element planning. But general-purpose LLMs like Claude are better writers. Instead of fighting this, we lean into it: Claude Code becomes the primary writing interface, and OpenSEO becomes the management, SEO optimization, and publishing platform.
+Semantic SEO Synthesizer's AI generation is good at structured SEO tasks — keyword research, dictionary generation, element planning. But general-purpose LLMs like Claude are better writers. Instead of fighting this, we lean into it: Claude Code becomes the primary writing interface, and Semantic SEO Synthesizer becomes the management, SEO optimization, and publishing platform.
 
-This directory contains everything needed to use OpenSEO agentically:
+This directory contains everything needed to use Semantic SEO Synthesizer agentically:
 
 ```
 agents/
-├── mcp/          # MCP server — exposes OpenSEO's API as tools Claude Code can call
+├── mcp/          # MCP server — exposes Semantic SEO Synthesizer's API as tools Claude Code can call
 │   └── src/
 │       ├── index.ts
 │       └── tools/
-└── skills/       # Skill/instruction files — teach Claude Code how to use OpenSEO
+└── skills/       # Skill/instruction files — teach Claude Code how to use Semantic SEO Synthesizer
 ```
 
 ## MCP Server
 
-A Model Context Protocol server that bridges Claude Code and OpenSEO. Authenticated via the existing inbound API key system. Runs as a stdio subprocess spawned by Claude Code.
+A Model Context Protocol server that bridges Claude Code and Semantic SEO Synthesizer. Authenticated via the existing inbound API key system. Runs as a stdio subprocess spawned by Claude Code.
 
 **What it exposes:**
 
@@ -32,15 +32,15 @@ A Model Context Protocol server that bridges Claude Code and OpenSEO. Authentica
 
 **What it does NOT do:**
 
-- Dictionary/term generation — that stays server-side using OpenSEO's own AI pipeline
-- Direct database access — the MCP server hits the OpenSEO HTTP API, it never touches Prisma directly
+- Dictionary/term generation — that stays server-side using Semantic SEO Synthesizer's own AI pipeline
+- Direct database access — the MCP server hits the Semantic SEO Synthesizer HTTP API, it never touches Prisma directly
 
 ## Skills
 
-Markdown instruction files that Claude Code loads as context. They make Claude an OpenSEO expert for two use cases:
+Markdown instruction files that Claude Code loads as context. They make Claude an Semantic SEO Synthesizer expert for two use cases:
 
 ### Content creation
-- How to write blog posts using OpenSEO's element system
+- How to write blog posts using Semantic SEO Synthesizer's element system
 - All 22 element types with their JSON content shapes
 - When to use which element type (e.g. use `faq` for question/answer, `checklist` for actionable lists)
 - How to structure a post (introduction → body elements → conclusion)
@@ -57,13 +57,13 @@ Markdown instruction files that Claude Code loads as context. They make Claude a
 ## The workflow
 
 1. User opens Claude Code in their project
-2. Claude Code connects to the OpenSEO MCP server (configured in `.claude/settings.json`)
+2. Claude Code connects to the Semantic SEO Synthesizer MCP server (configured in `.claude/settings.json`)
 3. User says "write a blog post about conversion rate optimization"
 4. Claude reads the company's dictionary terms via MCP (for keyword context)
 5. Claude writes the post as structured elements, guided by the skills
-6. Claude posts the elements back to OpenSEO via MCP
-7. OpenSEO applies dictionary hyperlinking, SEO analysis, and stores the post
-8. User reviews, edits, and publishes from the OpenSEO dashboard
+6. Claude posts the elements back to Semantic SEO Synthesizer via MCP
+7. Semantic SEO Synthesizer applies dictionary hyperlinking, SEO analysis, and stores the post
+8. User reviews, edits, and publishes from the Semantic SEO Synthesizer dashboard
 
 ## Auth
 

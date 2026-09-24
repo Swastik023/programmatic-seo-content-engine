@@ -42,7 +42,7 @@ A server-rendered page is importing client-side DOMPurify code. Check that serve
 
 ### Port 4720 already in use
 
-Either another OpenSEO instance is running, or something else grabbed that port. Change it:
+Either another Semantic SEO Synthesizer instance is running, or something else grabbed that port. Change it:
 
 ```bash
 # Via install script

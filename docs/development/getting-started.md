@@ -1,6 +1,6 @@
 # Getting Started
 
-How to get OpenSEO running on your machine for development.
+How to get Semantic SEO Synthesizer running on your machine for development.
 
 ## Prerequisites
 

@@ -21,4 +21,4 @@ Only the latest release on `main` is supported with security fixes.
 
 ## Scope
 
-This policy covers the OpenSEO application and its official Docker images. Third-party integrations, hosting infrastructure, and AI provider APIs are the operator's responsibility.
+This policy covers the Semantic SEO Synthesizer application and its official Docker images. Third-party integrations, hosting infrastructure, and AI provider APIs are the operator's responsibility.

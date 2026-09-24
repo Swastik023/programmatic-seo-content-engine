@@ -1,6 +1,6 @@
 # Runtime Model
 
-How OpenSEO boots, runs background work, and validates its environment.
+How Semantic SEO Synthesizer boots, runs background work, and validates its environment.
 
 ## Boot sequence
 

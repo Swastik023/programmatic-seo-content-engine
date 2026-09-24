@@ -40,7 +40,7 @@ export function assertServerEnv(): void {
     const msg = [
       '',
       '========================================================================',
-      'OpenSEO refused to start: required environment variables are missing or invalid.',
+      'Semantic SEO Synthesizer refused to start: required environment variables are missing or invalid.',
       '',
       ...errors.map((e) => `  - ${e}`),
       '',
