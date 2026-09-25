@@ -15,7 +15,7 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-blue" alt="License" /></a>
-  <a href="https://github.com/swastik-agnihotri/semantic-seo-synthesizer"><img src="https://img.shields.io/github/stars/swastik-agnihotri/semantic-seo-synthesizer?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/Swastik023/programmatic-seo-content-engine"><img src="https://img.shields.io/github/stars/Swastik023/programmatic-seo-content-engine?style=social" alt="GitHub stars" /></a>
 </p>
 
 <p align="center">
